@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Professional Web Developer Portfolio — Modern websites, web applications, dashboards and e-commerce experiences."
+    >
+
+    <meta
+        name="keywords"
+        content="Web Developer, Frontend Developer, Web Designer, JavaScript, HTML, CSS, Portfolio"
+    >
+
+    <meta name="author" content="Youssef Bar">
+
+    <meta name="theme-color" content="#070707">
+
+    <title>Youssef Bar — Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE LOADER
+    ========================== -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">&lt;/&gt;</div>
+            <div class="loader-line"></div>
+            <span>Loading experience...</span>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         CURSOR
+    ========================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+    <div class="background">
+        <div class="noise"></div>
+
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <div class="grid-background"></div>
+    </div>
+
+
+    <!-- =========================
+         SCROLL PROGRESS
+    ========================== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                <span>Youssef Bar</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <nav class="nav" id="nav">
+
+                <a href="#home" class="nav-link active">
+                    <span>01</span>
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    <span>02</span>
+                    About
+                </a>
+
+                <a href="#services" class="nav-link">
+                    <span>03</span>
+                    Services
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    <span>04</span>
+                    Projects
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    <span>05</span>
+                    Contact
+                </a>
+
+            </nav>
+
+            <a href="#contact" class="nav-cta">
+                Let's Talk
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        Available for new projects
+                    </div>
+
+                    <p class="hero-eyebrow">
+                        <span>01</span>
+                        WEB DEVELOPER & DIGITAL CREATOR
+                    </p>
+
+                    <h1>
+                        I build
+                        <span class="gradient-text">digital experiences</span>
+                        that make businesses stand out.
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>YOUR NAME</strong>, a professional web
+                        developer focused on creating premium websites,
+                        web applications, dashboards and e-commerce
+                        experiences that combine beautiful design with
+                        powerful functionality.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#projects" class="btn btn-primary magnetic">
+                            View My Work
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline magnetic">
+                            Let's Work Together
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+
+                        <div class="meta-item">
+                            <strong>50+</strong>
+                            <span>Projects</span>
+                        </div>
+
+                        <div class="meta-item">
+                            <strong>20+</strong>
+                            <span>Happy Clients</span>
+                        </div>
+
+                        <div class="meta-item">
+                            <strong>3+</strong>
+                            <span>Years Experience</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+                <div class="hero-visual reveal">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="image-glow"></div>
+
+                        <div class="hero-image-card">
+
+                            <!-- REPLACE THIS IMAGE -->
+                            <img
+                                src="WhatsApp Image 2026-08-11 at 10.11.18 PM (1).jpeg"
+                                alt="Youssef Bar"
+                            >
+
+                            <div class="image-overlay"></div>
+
+                            <div class="code-floating-card card-one">
+                                <span class="code-purple">const</span>
+                                <span>developer</span>
+                                <span>=</span>
+                                <span class="code-green">"creative"</span>
+                            </div>
+
+                            <div class="code-floating-card card-two">
+                                <i class="fa-brands fa-js"></i>
+                                JavaScript
+                            </div>
+
+                            <div class="available-card">
+                                <span></span>
+                                Open to work
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MARQUEE
+        ========================== -->
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-content">
+
+                    <span>WEB DEVELOPMENT</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>UI / UX</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>WEB APPS</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>E-COMMERCE</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>DASHBOARDS</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>JAVASCRIPT</span>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <div class="marquee-content">
+
+                    <span>WEB DEVELOPMENT</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>UI / UX</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>WEB APPS</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>E-COMMERCE</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>DASHBOARDS</span>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>JAVASCRIPT</span>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-number">02</span>
+                        <span class="section-label">ABOUT ME</span>
+                    </div>
+
+                    <h2>
+                        Turning ideas into
+                        <span class="gradient-text">digital reality.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+
+                        <div class="about-image-frame">
+
+                            <img
+                                src="WhatsApp Image 2026-08-11 at 10.11.18 PM (1).jpeg"
+                                alt="Youssef Bar"
+                            >
+
+                            <div class="experience-badge">
+                                <strong>3+</strong>
+                                <span>Years<br>Experience</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <p class="large-text">
+                            I don't just write code.
+                            <span>I create experiences.</span>
+                        </p>
+
+                        <p>
+                            I specialize in building modern, fast and
+                            responsive digital products. My approach combines
+                            clean development, thoughtful design and a deep
+                            understanding of what makes users interact,
+                            engage and convert.
+                        </p>
+
+                        <p>
+                            Whether you need a business website, online store,
+                            dashboard or custom web application, I focus on
+                            delivering something that doesn't just look good —
+                            it performs.
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>UI / UX</span>
+                            <span>Git</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SERVICES
+        ========================== -->
+        <section class="section services-section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-number">03</span>
+                        <span class="section-label">WHAT I DO</span>
+                    </div>
+
+                    <h2>
+                        Services built around
+                        <span class="gradient-text">your goals.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">01</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>Web Development</h3>
+
+                        <p>
+                            High-performance websites with clean code,
+                            modern architecture and pixel-perfect responsive
+                            layouts.
+                        </p>
+
+                        <div class="service-link">
+                            Explore service
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">02</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <h3>E-Commerce</h3>
+
+                        <p>
+                            Modern online stores designed to build trust,
+                            improve user experience and increase conversions.
+                        </p>
+
+                        <div class="service-link">
+                            Explore service
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">03</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <h3>Web Applications</h3>
+
+                        <p>
+                            Interactive web applications with powerful
+                            functionality, smooth interactions and scalable
+                            interfaces.
+                        </p>
+
+                        <div class="service-link">
+                            Explore service
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </article>
+
+
+                    <article class="service-card reveal">
+
+                        <div class="service-number">04</div>
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h3>Dashboards</h3>
+
+                        <p>
+                            Professional dashboards that transform complex
+                            information into simple, intuitive experiences.
+                        </p>
+
+                        <div class="service-link">
+                            Explore service
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading projects-heading reveal">
+
+                    <div>
+                        <span class="section-number">04</span>
+                        <span class="section-label">SELECTED WORK</span>
+                    </div>
+
+                    <h2>
+                        Projects that speak
+                        <span class="gradient-text">for themselves.</span>
+                    </h2>
+
+                    <p>
+                        A selection of digital experiences I've designed
+                        and developed.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTERS -->
+                <div class="project-filters reveal">
+
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="web">
+                        Websites
+                    </button>
+
+                    <button class="filter-btn" data-filter="ecommerce">
+                        E-Commerce
+                    </button>
+
+                    <button class="filter-btn" data-filter="app">
+                        Web Apps
+                    </button>
+
+                    <button class="filter-btn" data-filter="dashboard">
+                        Dashboards
+                    </button>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJECT 01 -->
+                    <article
+                        class="project-card project-large reveal"
+                        data-category="web"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./protofolio 2.jpeg"
+                                alt="Project One"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    WEBSITE
+                                </span>
+
+                                <h3>Luxury Business Website</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 02 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="ecommerce"
+                    >
+
+                        <a
+                            href="https://youssef-bar-jo10.github.io/--Smart-Study-Planner/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./Smart study planner.jpeg"
+                                alt="E-Commerce Project"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    E-COMMERCE
+                                </span>
+
+                                <h3>Premium Online Store</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>UI</span>
+                                <span>JS</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 03 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="app"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./لعبة 1.jpeg"
+                                alt="Web Application"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    WEB APP
+                                </span>
+
+                                <h3>Modern Web Application</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>JS</span>
+                                <span>API</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 04 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="dashboard"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./لعبة 2.jpeg"
+                                alt="Dashboard Project"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    DASHBOARD
+                                </span>
+
+                                <h3>Analytics Dashboard</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>UI</span>
+                                <span>Charts</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                                        <!-- PROJECT 05 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="app"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./torrotwar.jpeg"
+                                alt="Web Application"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    WEB APP
+                                </span>
+
+                                <h3>Modern Web Application</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>JS</span>
+                                <span>API</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 06 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="app"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./expensive.jpeg"
+                                alt="Web Application"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    WEB APP
+                                </span>
+
+                                <h3>Modern Web Application</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>JS</span>
+                                <span>API</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 07 -->
+                    <article
+                        class="project-card project-large reveal"
+                        data-category="web"
+                    >
+
+                        <a
+                            href="https://youssef-bar-jo10.github.io/minhag-academy/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./أكاديمية المنهاج.jpeg"
+                                alt="Creative Website"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    WEBSITE
+                                </span>
+
+                                <h3>Creative Agency Website</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 08 -->
+                    <article
+                        class="project-card reveal"
+                        data-category="ecommerce"
+                    >
+
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image"
+                        >
+
+                            <img
+                                src="./dragon.jpeg"
+                                alt="E-Commerce Website"
+                            >
+
+                            <div class="project-overlay">
+
+                                <span>View Live Project</span>
+
+                                <div class="project-arrow">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <div class="project-info">
+
+                            <div>
+                                <span class="project-type">
+                                    E-COMMERCE
+                                </span>
+
+                                <h3>Fashion Store</h3>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>UI</span>
+                                <span>JS</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="projects-bottom reveal">
+
+                    <span>
+                        Want to see more?
+                    </span>
+
+                    <a href="#contact" class="text-link">
+                        Let's build something great
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROCESS
+        ========================== -->
+        <section class="section process-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-number">05</span>
+                        <span class="section-label">MY PROCESS</span>
+                    </div>
+
+                    <h2>
+                        From idea to
+                        <span class="gradient-text">launch.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-item reveal">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Discover</h3>
+                            <p>
+                                Understanding your business, goals,
+                                audience and vision.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item reveal">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Design</h3>
+                            <p>
+                                Creating a premium visual direction
+                                focused on your users.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item reveal">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Develop</h3>
+                            <p>
+                                Turning the design into fast,
+                                responsive and clean code.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item reveal">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Launch</h3>
+                            <p>
+                                Testing, optimizing and delivering
+                                a polished final product.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card reveal">
+
+                    <div class="cta-decoration"></div>
+
+                    <span class="cta-label">
+                        HAVE A PROJECT IN MIND?
+                    </span>
+
+                    <h2>
+                        Let's create something
+                        <span>exceptional.</span>
+                    </h2>
+
+                    <p>
+                        Tell me about your idea and let's turn it
+                        into a digital experience your customers
+                        will remember.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="btn btn-light magnetic"
+                    >
+                        Start a Conversation
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+                    <div class="contact-content reveal">
+
+                        <span class="section-label">
+                            06 — CONTACT
+                        </span>
+
+                        <h2>
+                            Have an idea?
+                            <span class="gradient-text">
+                                Let's talk.
+                            </span>
+                        </h2>
+
+                        <p>
+                            I'm always interested in hearing about
+                            ambitious projects and new opportunities.
+                        </p>
+
+                        <div class="contact-links">
+
+                            <!-- REPLACE EMAIL -->
+                            <a href="mailto:youssefbar000@gmail.com">
+                                <span class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+
+                                <span>
+                                    <small>Email</small>
+                                    youssefbar000@gmail.com
+                                </span>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+
+                            <!-- REPLACE WHATSAPP -->
+                            <a
+                                href="https://wa.me/+201035078083"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <span class="contact-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </span>
+
+                                <span>
+                                    <small>WhatsApp</small>
+                                    Let's chat
+                                </span>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                            <!-- REPLACE LINKEDIN -->
+                            <a
+                                href="https://www.linkedin.com/in/youssef-bar-3971a238a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <span class="contact-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </span>
+
+                                <span>
+                                    <small>LinkedIn</small>
+                                    Connect with me
+                                </span>
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form reveal" id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="John Doe"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="john@example.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="project">
+                                Project Type
+                            </label>
+
+                            <select id="project" name="project">
+
+                                <option value="">
+                                    Select a service
+                                </option>
+
+                                <option>
+                                    Website
+                                </option>
+
+                                <option>
+                                    E-Commerce
+                                </option>
+
+                                <option>
+                                    Web Application
+                                </option>
+
+                                <option>
+                                    Dashboard
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell me about your project
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me about your idea..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit magnetic"
+                        >
+
+                            Send Message
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-symbol">&lt;</span>
+                YB
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <p>
+                Designed & developed with passion.
+            </p>
+
+            <div class="social-links">
+
+            <a
+                href="https://www.facebook.com/youssef.bar.350965/"
+                target="_blank"
+            >
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+
+            <a
+                href="https://www.messenger.com/e2ee/t/24277663491932725"
+                target="_blank"
+            >
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </a>
+
+
+            <a
+                href="https://wa.me/201035078083"
+                target="_blank"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+
+            <a
+                href="https://www.linkedin.com/in/youssef-bar-3971a238a/"
+                target="_blank"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+
+            <a
+                href="https://github.com/youssefbar"
+                target="_blank"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+            </div>
+
+            <span class="copyright">
+                © <span id="year"></span> Youssef Bar . All rights reserved.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+    <button
+        class="back-top"
+        id="backTop"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
