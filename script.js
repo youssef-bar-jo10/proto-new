@@ -64,50 +64,67 @@ function initLoader() {
 ========================================================= */
 
 function initMobileMenu() {
-
-    const menuToggle =
-        document.getElementById("menuToggle");
-
-    const nav =
-        document.getElementById("nav");
-
-    const navLinks =
-        document.querySelectorAll(".nav-link");
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("nav");
 
     if (!menuToggle || !nav) return;
 
+    const navLinks = nav.querySelectorAll(".nav-link");
+
+    function closeMenu() {
+        menuToggle.classList.remove("active");
+        nav.classList.remove("active");
+        document.body.classList.remove("menu-open");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+    }
+
+    function openMenu() {
+        menuToggle.classList.add("active");
+        nav.classList.add("active");
+        document.body.classList.add("menu-open");
+
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Close menu");
+    }
+
+    menuToggle.setAttribute("aria-expanded", "false");
 
     menuToggle.addEventListener("click", () => {
-
-        menuToggle.classList.toggle("active");
-
-        nav.classList.toggle("active");
-
-        document.body.classList.toggle(
-            "menu-open"
-        );
-
+        if (nav.classList.contains("active")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     });
-
 
     navLinks.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            menuToggle.classList.remove("active");
-
-            nav.classList.remove("active");
-
-            document.body.classList.remove(
-                "menu-open"
-            );
-
-        });
-
+        link.addEventListener("click", closeMenu);
     });
 
-}
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
 
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 900) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("click", event => {
+        if (
+            nav.classList.contains("active") &&
+            !nav.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+}
 
 /* =========================================================
    HEADER
