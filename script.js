@@ -1484,25 +1484,25 @@ function initLanguageSwitcher() {
 
         applySelectOptions(language);
 
-        /* =========================================================
-   BRAND NAME — YOUSSEF BAR
+/* =========================================================
+   BRAND NAME — SAFE LANGUAGE SWITCH
 ========================================================= */
 
-const brandElements = document.querySelectorAll(
-    '[data-brand], .brand, .logo, .site-logo, .footer-logo'
-);
+const brandName = document.querySelector(".logo-name");
 
-brandElements.forEach(element => {
-    if (!element.dataset.originalBrand) {
-        element.dataset.originalBrand = element.textContent.trim();
-    }
+if (brandName) {
 
-    element.textContent =
+    brandName.innerHTML =
         language === "ar"
-            ? "يوسف بر"
-            : "Youssef Bar";
-});
-
+            ? `
+                <strong>يوسف</strong>
+                <em>بر</em>
+              `
+            : `
+                <strong>Youssef</strong>
+                <em>Bar</em>
+              `;
+}
 
 /* Replace Youssef Bar anywhere else in visible text */
 document.body.querySelectorAll("*").forEach(element => {

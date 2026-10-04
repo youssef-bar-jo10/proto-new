@@ -53,67 +53,152 @@
 <!-- =========================
          NAVBAR
     ========================== -->
+
+<!-- =========================================================
+     PREMIUM NAVBAR
+========================================================= -->
+
 <header class="header" id="header">
-<div class="container nav-container">
-<a class="logo" href="#home">
-<span class="logo-symbol">&lt;</span>
-<span>𓆩𓆩𝓨𝓸𝓾𝓼𝓼𝓮𝓯 𝓑𝓪𝓻𓆪𓆪</span>
-<span class="logo-symbol">&gt;</span>
+
+    <div class="nav-shell">
+
+        <!-- LOGO -->
+<a class="logo" href="#home" aria-label="Youssef Bar Home">
+
+    <span class="logo-mark">
+        <span>&lt;</span>
+        <b>YB</b>
+        <span>/&gt;</span>
+    </span>
+
+    <span class="logo-name">
+        <strong>Youssef</strong>
+        <em>Bar</em>
+    </span>
+
 </a>
-<nav class="nav" id="nav">
-<a class="nav-link active" href="#home">
-<span></span>
-                    Home
+
+        <!-- NAVIGATION -->
+        <nav class="nav" id="nav" aria-label="Main navigation">
+
+            <div class="nav-inner">
+
+                <a class="nav-link active" href="#home">
+                    <span class="nav-index"></span>
+                    <span class="nav-text">Home</span>
                 </a>
-<a class="nav-link" href="#about">
-<span></span>
-                    About
+
+                <a class="nav-link" href="#about">
+                    <span class="nav-index"></span>
+                    <span class="nav-text">About</span>
                 </a>
-<a class="nav-link" href="#services">
-<span></span>
-                    Services
+
+                <a class="nav-link" href="#services">
+                    <span class="nav-index"></span>
+                    <span class="nav-text">Services</span>
                 </a>
-<a class="nav-link" href="#projects">
-<span></span>
-                    Projects
+
+                <a class="nav-link" href="#projects">
+                    <span class="nav-index"></span>
+                    <span class="nav-text">Projects</span>
                 </a>
-<a class="nav-link" href="#contact">
-<span></span>
-                    Contact
+
+                <a class="nav-link" href="#contact">
+                    <span class="nav-index"></span>
+                    <span class="nav-text">Contact</span>
                 </a>
-</nav>
-<a class="nav-cta" href="#contact">
-    Let's Talk
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-</a>
-<button aria-label="Switch to light mode" aria-pressed="false" class="theme-toggle" id="themeToggle" type="button">
-<span class="theme-icon theme-sun">
-<i class="fa-solid fa-sun"></i>
-</span>
-<span class="theme-icon theme-moon">
-<i class="fa-solid fa-moon"></i>
-</span>
-</button>
-<!-- LANGUAGE SWITCHER -->
-<div class="language-switcher" id="languageSwitcher">
-<div class="language-switch-track">
-<div class="language-slider" id="languageSlider"></div>
-<button aria-label="Switch to English" class="language-option" data-language="en" type="button">
-            EN
-        </button>
-<span class="language-divider">|</span>
-<button aria-label="التبديل إلى العربية" class="language-option" data-language="ar" type="button">
-            AR
-        </button>
-</div>
-</div>
-<button aria-controls="nav" aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle" type="button">
-<span></span>
-<span></span>
-</button>
-</div>
+
+            </div>
+
+        </nav>
+
+        <!-- NAV ACTIONS -->
+        <div class="nav-actions">
+
+            <!-- LANGUAGE -->
+            <div class="language-switcher" id="languageSwitcher">
+
+                <div class="language-switch-track">
+
+                    <div
+                        class="language-slider"
+                        id="languageSlider">
+                    </div>
+
+                    <button
+                        class="language-option"
+                        data-language="en"
+                        type="button"
+                        aria-label="Switch to English">
+                        EN
+                    </button>
+
+                    <span class="language-divider">|</span>
+
+                    <button
+                        class="language-option"
+                        data-language="ar"
+                        type="button"
+                        aria-label="التبديل إلى العربية">
+                        AR
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- THEME -->
+            <div class="theme-toggle-wrapper">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    aria-pressed="false">
+
+                    <span class="theme-icon theme-sun">
+                        <i class="fa-solid fa-sun"></i>
+                    </span>
+
+                    <span class="theme-icon theme-moon">
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+
+                </button>
+
+            </div>
+
+            <!-- CTA -->
+            <a class="nav-cta" href="#contact">
+
+                <span>Let's Talk</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+            <!-- MOBILE MENU -->
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-controls="nav"
+                aria-expanded="false"
+                aria-label="Open menu">
+
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
 </header>
-<main>
+
+    <main>
 <!-- =========================
              HERO
         ========================== -->
